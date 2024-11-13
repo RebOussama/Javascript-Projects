@@ -1,0 +1,46 @@
+.main{
+    width: 350px;
+    background-color: rgb(40, 40, 40);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+#display{
+    width: calc(100% - 6px);
+    border: 1px solid rgb(84, 84, 84);
+    background-color: rgb(84, 84, 84);
+    height: 60px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    font-size: 45px;
+    letter-spacing: 2px;
+
+}
+.keys{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    padding: 12px;
+    
+}
+
+.keys button{
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(202, 202, 202);
+}
+.keys button:hover{
+    cursor: pointer;
+    background-color: rgb(154, 154, 154);
+}
+.keys .orange{
+    background-color: rgba(255, 166, 0, 0.92);
+    color: white;
+}
+.keys .orange:hover{
+    background-color: rgb(255, 166, 0,1);
+}

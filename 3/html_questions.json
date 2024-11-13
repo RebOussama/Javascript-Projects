@@ -1,0 +1,84 @@
+[
+      {
+        "title": "What does HTML stand for?",
+        "answer_1": "HyperText Markup Language",
+        "answer_2": "Hyperlinks and Text Marking Language",
+        "answer_3": "Hyperlinking Text Management Language",
+        "answer_4": "Hyper Tool Management Language",
+        "right_answer": "HyperText Markup Language"
+      },
+      {
+        "title": "Which HTML tag is used to create a hyperlink?",
+        "answer_1": "<link>",
+        "answer_2": "<href>",
+        "answer_3": "<a>",
+        "answer_4": "<hlink>",
+        "right_answer": "<a>"
+      },
+      {
+        "title": "What is the purpose of the <title> tag in HTML?",
+        "answer_1": "To add a heading to the webpage",
+        "answer_2": "To add a title to the web document displayed in the browser tab",
+        "answer_3": "To create a clickable link",
+        "answer_4": "To style the page content",
+        "right_answer": "To add a title to the web document displayed in the browser tab"
+      },
+      {
+        "title": "Which HTML tag is used to create an ordered list?",
+        "answer_1": "<ul>",
+        "answer_2": "<ol>",
+        "answer_3": "<li>",
+        "answer_4": "<list>",
+        "right_answer": "<ol>"
+      },
+      {
+        "title": "What is the correct way to create a comment in HTML?",
+        "answer_1": "// Comment",
+        "answer_2": "/* Comment */",
+        "answer_3": "<!-- Comment -->",
+        "answer_4": "# Comment",
+        "right_answer": "<!-- Comment -->"
+      },
+      {
+        "title": "What is the correct syntax to include an image in HTML?",
+        "answer_1": "<image src=\"image.jpg\">",
+        "answer_2": "<img src=\"image.jpg\" />",
+        "answer_3": "<img href=\"image.jpg\">",
+        "answer_4": "<src img=\"image.jpg\">",
+        "right_answer": "<img src=\"image.jpg\" />"
+      },
+      {
+        "title": "Which attribute is used to define inline styles in HTML?",
+        "answer_1": "style",
+        "answer_2": "class",
+        "answer_3": "id",
+        "answer_4": "css",
+        "right_answer": "style"
+      },
+      {
+        "title": "Which HTML tag is used for creating a table row?",
+        "answer_1": "<td>",
+        "answer_2": "<th>",
+        "answer_3": "<tr>",
+        "answer_4": "<table-row>",
+        "right_answer": "<tr>"
+      },
+      {
+        "title": "How do you create a checkbox in HTML?",
+        "answer_1": "<checkbox>",
+        "answer_2": "<input type=\"checkbox\">",
+        "answer_3": "<check type=\"box\">",
+        "answer_4": "<input type=\"check\">",
+        "right_answer": "<input type=\"checkbox\">"
+      },
+      {
+        "title": "Which tag is used to create a text area in HTML forms?",
+        "answer_1": "<textbox>",
+        "answer_2": "<input type=\"text\">",
+        "answer_3": "<textarea>",
+        "answer_4": "<input type=\"textarea\">",
+        "right_answer": "<textarea>"
+      }
+    ]
+  
+  

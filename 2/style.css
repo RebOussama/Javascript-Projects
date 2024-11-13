@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 40px auto;
+    width: 1000px;
+}
+.row{
+    display: flex;
+}
+.game-info{
+display: flex;
+justify-content: space-between;
+font-size: 25px;
+font-weight: 400;
+line-height: 30px;
+}
+
+.game-info .category span{
+    color: rgb(251, 71, 71);
+}
+.hangmandraw{
+    background-color:rgb(237, 237, 237) ;
+    height: 400px;
+    flex: 1;
+}
+.hangmandraw .the-draw{
+width: 70px;
+height: 350px;
+border-bottom:4px solid black ;
+position: relative;
+left: 80px;
+display: none;
+}
+.hangmandraw .stand{
+  width: 4px;
+  height: 80%;
+  background-color: black;
+  position: absolute;
+  top: 70px;
+  left: 33px;
+  display: none;
+}
+.hangmandraw .hang{
+  display: none;
+}
+.hangmandraw .hang::before{
+    content: "";
+    width: 140px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 33px;
+  }
+  .hangmandraw .hang::after{
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 170px;
+  }
+  .hangmandraw .rope{
+    width: 75px;
+    height: 75px;
+    border: 4px dashed black;
+    position: absolute;
+    top: 120px;
+    border-radius: 100%;
+    left: 135px;
+    display: none;
+  }
+  .hangmandraw .head{
+    width: 60px;
+    height: 60px;
+    border: 4px solid black;
+    position: absolute;
+    top: 127px;
+    border-radius: 100%;
+    left: 143px;
+    display: none;
+  }
+  .hangmandraw .body{
+    width: 4px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 185px;
+    left: 170px;
+    display: none;
+  }
+  .hangmandraw .hands{
+    display: none;
+  }
+  .hangmandraw .hands::before{
+    content: '';
+    width: 45px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    left: 170px;
+    transform: rotate(-30deg);
+  }
+  .hangmandraw .hands::after{
+    content: '';
+    width: 45px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 200px;
+    left: 130px;
+    transform: rotate(30deg);
+  }
+.hangmandraw .legs{
+  display: none;
+}
+  .hangmandraw .legs::before{
+    content: '';
+    width: 45px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 295px;
+    left: 170px;
+    transform: rotate(30deg);
+  }
+  .hangmandraw .legs::after{
+    content: '';
+    width: 45px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 295px;
+    left: 130px;
+    transform: rotate(-30deg);
+  }
+
+  .hangmandraw.wrong-1 .the-draw{
+    display: block;
+  }
+  .hangmandraw.wrong-2 .stand{
+    display: block;
+  }
+  .hangmandraw.wrong-3 .hang{
+    display: block;
+  }
+  .hangmandraw.wrong-4 .rope{
+    display: block;
+  }
+  .hangmandraw.wrong-5 .head{
+    display: block;
+  }
+  .hangmandraw.wrong-6 .body{
+    display: block;
+  }
+  .hangmandraw.wrong-7 .hands{
+    display: block;
+  }
+  .hangmandraw.wrong-8 .legs{
+    display: block;
+  }
+.letters{
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+.letters.finished{
+  pointer-events: none;
+}
+.letter-box{
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    background-color: #009688;
+}
+.letter-box.clicked{
+  background-color: #222;
+  opacity: .2;
+  pointer-events: none;
+}
+.letters-guess{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  gap: 10px;
+  background-color: rgb(237, 237, 237);
+}
+.letters-guess span{
+  background-color: white;
+  border-bottom: 2px solid black;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  transition: .3;
+}
+
+.letters-guess span.Has-space{
+  background-color: rgb(237, 237, 237);
+  border: none;
+
+ 
+
+}
+
+.letters-guess span.Has-space::before{
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #009688;
+  border: none;
+
+ 
+
+}
